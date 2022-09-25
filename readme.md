@@ -1,1 +1,1 @@
-# python slot machine for practice
+# vtrl slots
