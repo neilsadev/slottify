@@ -2,7 +2,7 @@ from model.const import *
 from controller.bet import get_bet
 from controller.depos import depos
 from controller.lines import get_number_of_lines
-from controller.get_lines import get_slot_spin
+from controller.get_lines import get_slot_spin, print_slot_machine
 
 def main():
     balacnce = depos()
@@ -16,4 +16,7 @@ def main():
         else:
             break
 
+    slots = get_slot_spin(ROWS, COLS, symbol_count)
+    print_slot_machine(slots)
     print(f"You are betting ${bet} on {lines} lines. Your total bet is: ${total_bet}")
+    
